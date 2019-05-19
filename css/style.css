@@ -1,0 +1,163 @@
+body {
+    background: #232B2B;
+    width: 100%;
+    height: 100%;
+    font-family: 'Stylish', sans-serif;
+}
+.wrapper {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    margin-bottom: 0;
+    
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.menu {
+    background: #DC3D24;
+    
+}
+.menu nav {
+ height: 100%;
+width: 100%;
+display: flex;
+flex-flow: row nowrap;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 20px;
+}
+.menu nav ul {
+    margin-left: 30px;
+    
+}
+.menu nav ul li {
+    margin-top: 20px;
+}
+.menu nav ul li a {
+color: #fff;
+font-size: 1.5rem;
+text-decoration: none;
+letter-spacing: 5px;
+transition: all 1s;
+}
+.menu nav ul li:hover {
+    border-bottom: 2px dashed white; 
+}
+.menu nav ul li:hover a {
+    font-size: 3rem;
+}
+.content {
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: 1fr;
+    background: #FFFFFF;
+    padding: 20px 50px;
+    font-family: 'Stylish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 1s;
+    
+}
+.current a {
+    color: #E3AE57 !important;
+    font-size: 3rem !important;
+    position: relative;
+}
+.current {
+    font-size: 5rem;
+}
+/*.current:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin-left: 5px;
+    position: absolute;
+    border-top: 2px dashed white;
+    top: 100%;
+}*/
+
+/*STYLE FOR 1ST SECTION*/
+.content .content__info {
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    margin-top: 30px;
+}
+.content .content__info h2 {
+font-size: 3rem;
+padding-left: 20px;
+}
+
+.content .content__info p {
+font-size: 1.5rem;
+padding: 20px;
+}
+.content .content__info img {
+grid-column: -2/-1;
+grid-row: 1/-1;
+border-radius: 50%;
+width: 100%;
+height: 100%;
+}
+.content .content__button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content .content__button button {
+    
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 35px;
+    background: #E3AE57;
+    transition: all 1s;
+}
+.content .content__button button:hover {
+    border: 2px solid black;
+}
+.content .content__button button a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232B2B;
+}
+.content .content__contact {
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.content .content__contact div  {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    cursor: pointer;
+ }
+
+.content .content__contact div p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#232B2B;
+    transition: all 1s;
+    padding: 10px;
+}
+.content .content__contact div:hover p  {
+    font-size: 1.5rem;
+    border-bottom: 2px dashed #DC3D24; 
+ }
+.content .content__contact div i {
+   
+   font-size: 2.5rem;
+   color: #232B2B;
+   align-self: center;
+   transition: all 1s;
+}
+.content .content__contact div:hover i  {
+    font-size: 3rem;
+    color: #DC3D24;
+ }
+ /*STYLE FOR 2ST SECTION*/
