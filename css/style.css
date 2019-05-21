@@ -219,7 +219,7 @@ animation-delay: 0.8s;
 .skills__box {
     height: 1em;
     width: 93%;
-    border: .1em solid #000;
+    border: .1em solid #232B2B;
     border-radius: 3px;
     display: inline-block;
     margin: .5em 0 2em;
@@ -231,47 +231,47 @@ animation-delay: 0.8s;
 #one {
 height: .9em;
   width: 70%;
-  background: #000;
+  background: #232B2B;
   display: block;
 }
   
 #two {
 height: .9em;
   width: 70%;
-  background: #000;
+  background: #232B2B;
   display: block;
 }
   
 #three {
 height: .9em;
   width: 50%;
-  background: #000;
+  background: #232B2B;
   display: block;
 }
   
 #four {
 height: .9em;
   width: 45%;
-  background: #000;
+  background: #232B2B;
   display: block;
 }
   
 #five {
 height: .9em;
   width: 65%;
-  background: #000;
+  background: #232B2B;
   display: block;
 }
 #six {
     height: .9em;
       width: 10%;
-      background: #000;
+      background: #232B2B;
       display: block;
     }
 #seven {
         height: .9em;
           width: 75%;
-          background: #000;
+          background: #232B2B;
           display: block;
         }
   
@@ -385,3 +385,75 @@ height: 100%;
     color: #DC3D24;
  }
 /* SECTION 2st SECTION PORTFOLIO */
+#portfolio h1 {
+    text-transform: uppercase;
+    text-align: center;
+   color: #232B2B;
+    font-size: 3rem;
+    margin: 0;
+}
+    
+#portfolio p {
+    color: #232B2B;
+    font-size: 1.5rem;
+    text-align: center;
+}
+    
+.portfolio__toggles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.portfolio__toggles button {
+    margin-left: 20px;
+    background: #232B2B;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+  
+    color: #fff;
+}
+     
+.portfolio__toggles button:hover {
+    color: #E3AE57;
+    background: #DC3D24;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4); 
+ 
+}
+
+.portfolio__posts {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+    padding: 0 100px;
+    margin: 5rem 0;
+}
+    
+.portfolio__posts .post {
+    
+    flex: 1 1 30%;
+    cursor: pointer;
+    transition: background .9s;
+}
+
+.portfolio__posts .post:hover {
+    
+    background: #E3AE57;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4); 
+
+}
+.portfolio__posts .post img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.portfolio__posts .post:hover img {
+    transform: scale(1.1);
+    
+    background: #E3AE57;
+}
+         
