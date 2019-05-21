@@ -19,14 +19,20 @@ $('li').on('click', function (event) {
             $('#content').load(url + '#contact');
             console.log('contact link');
             break;
-        case 'http://ajax/pages/blog.html':
-            $('#content').load(url + '#blog');
-            console.log('blog link');
+        case 'http://ajax/pages/skills.html':
+            $('#content').load(url + '#skills');
+            console.log('skills link');
             break;
 
     }
 
-    /* $('#test').remove();
-     $('#content').load(url + '#about');*/
-
 });
+
+	//LOADER
+
+	$(window).on('load', function(){
+		$('#preloader').fadeOut(2000);
+    });
+    
+    //WOW ANIMATE
+	new WOW().init();

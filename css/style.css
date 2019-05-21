@@ -77,7 +77,231 @@ transition: all 1s;
     top: 100%;
 }*/
 
-/*STYLE FOR 1ST SECTION*/
+/* SECTION PRELOADER */
+#preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #474747;
+    z-index: 999;
+    text-align: center;
+}
+  
+#preloader span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+  
+#preloader::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: -0.36em;
+}
+   
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.bar {
+    width: 6px;
+    height: 60px;
+    background: white;
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: loading 1.5s ease-in-out infinite;
+  
+}
+ 
+.bar1 {
+animation-delay: 0.1s;
+}
+  
+.bar2 {
+animation-delay: 0.2s;
+}
+  
+.bar3 {
+animation-delay: 0.3s;
+}
+  
+.bar4 {
+animation-delay: 0.4s;
+}
+  
+.bar5 {
+animation-delay: 0.5s;
+}
+  
+.bar6 {
+animation-delay: 0.6s;
+}
+  
+.bar7 {
+animation-delay: 0.7s;
+}
+  
+.bar8 {
+animation-delay: 0.8s;
+}
+  
+@keyframes loading {
+    0% {
+        transform: scaleY(0.1);
+    background: #fff;
+    }
+    
+  50% {
+      transform: scaleY(1);
+    background: #717171;
+  }
+  
+  100% {
+      transform: scaleY(0.1);
+    background: transparent;
+  }
+  
+}
+/* SECTION SKILLS */
+.content_skills {
+    border: 4.5px solid #fff;
+    border-radius: 20px;
+    padding: 1em 0;
+    
+    width: 100%;
+    background: #fff;
+    display: block;
+}
+  
+.content_skills h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #232B2B;
+    text-align: left;
+    font-weight: lighter;
+    display: block;
+    letter-spacing: .2em;
+    margin: 0;
+    margin-left: 32px;
+}
+    
+.content_skills  ul {
+    padding-left: 0;
+    color: #232B2B;
+    text-align: left;
+    margin-left: 2em;
+    list-style-type: none;
+}
+.content_skills ul li {
+    letter-spacing: .2em;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+}
+      
+.content_skills ul li i {
+    font-size: 2rem;
+    color: #DC3D24;
+}
+         
+/* Containers for skill levels */
+
+.skills__box {
+    height: 1em;
+    width: 93%;
+    border: .1em solid #000;
+    border-radius: 3px;
+    display: inline-block;
+    margin: .5em 0 2em;
+    text-align: center;
+}
+  
+/* Skill levels*/
+
+#one {
+height: .9em;
+  width: 70%;
+  background: #000;
+  display: block;
+}
+  
+#two {
+height: .9em;
+  width: 70%;
+  background: #000;
+  display: block;
+}
+  
+#three {
+height: .9em;
+  width: 50%;
+  background: #000;
+  display: block;
+}
+  
+#four {
+height: .9em;
+  width: 45%;
+  background: #000;
+  display: block;
+}
+  
+#five {
+height: .9em;
+  width: 65%;
+  background: #000;
+  display: block;
+}
+#six {
+    height: .9em;
+      width: 10%;
+      background: #000;
+      display: block;
+    }
+#seven {
+        height: .9em;
+          width: 75%;
+          background: #000;
+          display: block;
+        }
+  
+/* Large hover state for animation*/
+
+.content_skills:hover #one,
+.content_skills:hover #two,
+.content_skills:hover #three,
+.content_skills:hover #four,
+.content_skills:hover #five,
+.content_skills:hover #six,
+.content_skills:hover #seven {
+    animation: grow 1.4s 0.3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
+}
+ 
+/* Keyframe */
+
+@keyframes grow {
+    0% {
+        width: 0;
+    }
+    
+  100% {
+    
+    transform: 100%;
+  }
+    
+}
+  
+/* SECTION 1st SECTION ABOUT ME */
 .content .content__info {
     border: 2px solid white;
     display: grid;
@@ -160,4 +384,4 @@ height: 100%;
     font-size: 3rem;
     color: #DC3D24;
  }
- /*STYLE FOR 2ST SECTION*/
+/* SECTION 2st SECTION PORTFOLIO */
