@@ -1,0 +1,2 @@
+1) Отключил разметку preloader в index.html
+1) Отключил скрипт preloader в main.js

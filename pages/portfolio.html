@@ -1,68 +1,68 @@
 <div id="portfolio" class="animated fadeIn">
     
-        <div>
-                <h1>my WORK</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                  nonummy nibh euismod tincidunt.
-                </p>
-                <div class="portfolio__toggles">
-                  <button id="showall">SHOW ALL</button>
-                  <button id="webdev">HTML5+CSS3</button>
-                  <button id="webdesign">WordPress</button>
-                  <button id="graphd">FrameWork</button>
-                </div>
-    
-                <div class="portfolio__posts animated fadeInUp wow">
-                  <div class="post graphd">
-                    <img src="img/1-min.png" alt="" />
-    
-                    <div class="overlay">
-                      <a class="icon"
-                        target="_blank"
-                        href="https://mambli-joe.github.io/user_portfolio/"
-                        ><i class="fas fa-link"></i
-                      ></a>
-                    </div>
-                  </div>
-    
-                  <div class="post webdev">
-                    <img src="img/2-min.png" alt="" />
-    
-                    <div class="overlay">
-                      <a class="icon"
-                        target="_blank"
-                        href="https://mambli-joe.github.io/mambliTunes/"
-                        ><i class="fas fa-link"></i
-                      ></a>
-                    
-                    </div>
-                  </div>
-    
-                  <div class="post webdesign">
-                    <img src="img/3-min.png" alt="" />
-                    <div class="overlay">
-                      <a class="icon"
-                        target="_blank"
-                        href="https://mambli-joe.github.io/creditCard/"
-                        ><i class="fas fa-link"></i
-                      ></a>
-                    </div>
-                  </div>
+    <div>
+            <h1>my WORKS</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt.
+            </p>
+            <div class="portfolio__toggles">
+              <button id="showall">SHOW ALL</button>
+              <button id="webdev">HTML5+CSS3</button>
+              <button id="webdesign">WordPress</button>
+              <button id="graphd">FrameWork</button>
+            </div>
+
+            <div class="portfolio__posts animated fadeInUp wow">
+              <div class="post graphd">
+                <img src="img/1-min.png" alt="" />
+
+                <div class="overlay">
+                  <a class="icon"
+                    target="_blank"
+                    href="https://mambli-joe.github.io/user_portfolio/"
+                    ><i class="fas fa-link"></i
+                  ></a>
                 </div>
               </div>
 
-    <script>
-    $('.portfolio__toggles button').click(function(){
-        var get_id = this.id;
-        var get_current = $('.portfolio__posts .' + get_id);
-    
-        $('.post').not(get_current).hide(500);
-        get_current.show(500);
-       });
-    
-       $('#showall').click(function() {
-        $('.post').show(500);
-       });
-       </script>
+              <div class="post webdev">
+                <img src="img/2-min.png" alt="" />
+
+                <div class="overlay">
+                  <a class="icon"
+                    target="_blank"
+                    href="https://mambli-joe.github.io/mambliTunes/"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                
+                </div>
+              </div>
+
+              <div class="post webdesign">
+                <img src="img/3-min.png" alt="" />
+                <div class="overlay">
+                  <a class="icon"
+                    target="_blank"
+                    href="https://mambli-joe.github.io/creditCard/"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<script>
+$('.portfolio__toggles button').click(function(){
+    var get_id = this.id;
+    var get_current = $('.portfolio__posts .' + get_id);
+
+    $('.post').not(get_current).hide(500);
+    get_current.show(500);
+   });
+
+   $('#showall').click(function() {
+    $('.post').show(500);
+   });
+   </script>
 </div>
